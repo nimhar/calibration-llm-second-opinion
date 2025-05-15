@@ -1,0 +1,41 @@
+\begin{table}[htbp]
+\centering
+\caption{
+Comparison of models' prior opinion accuracy with the majority vote accuracy of their second opinions. 
+Higher values in the Prior and Second Opinion Majority Accuracy columns are better (\textuparrow). 
+Entropy (in bits) quantifies the diversity of second-opinion responses — lower values indicate more agreement (\textdownarrow). 
+Entropy ranges from 0 (total agreement) to 2.0 (maximum disagreement with 4 options). 
+The best accuracy performance for each dataset is highlighted in \textbf{bold}.
+}
+\label{tab:model_performance_with_entropy}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Dataset} & \textbf{Model} & 
+\makecell{\textbf{Prior Opinion} \\ \textbf{Accuracy} (\textuparrow)} & 
+\makecell{\textbf{Second Opinion} \\ \textbf{Accuracy} (\textuparrow)} & 
+\makecell{\textbf{Entropy} \\ \textbf{(bits)} (\textdownarrow)} \\
+\midrule
+\multirow{2}{*}{\textbf{general_surgery}}
+& DeepSeek R1 8B & 0.311 $\pm$ 0.041 & 0.294 $\pm$ 0.041 & 1.291 \\
+& GPT-4o & \textbf{0.775 $\pm$ 0.037} & \textbf{0.760 $\pm$ 0.038} & \textbf{0.516} \\
+\midrule
+
+\multirow{1}{*}{\textbf{internal_medicine}}
+& GPT-4o & \textbf{0.791 $\pm$ 0.037} & \textbf{0.750 $\pm$ 0.040} & \textbf{0.433} \\
+\midrule
+
+\multirow{1}{*}{\textbf{obgyn}}
+& GPT-4o & \textbf{0.693 $\pm$ 0.041} & \textbf{0.742 $\pm$ 0.039} & \textbf{0.617} \\
+\midrule
+
+\multirow{2}{*}{\textbf{pediatrics}}
+& DeepSeek R1 8B & 0.318 $\pm$ 0.047 & 0.299 $\pm$ 0.046 & 1.190 \\
+& GPT-4o & \textbf{0.764 $\pm$ 0.059} & \textbf{0.765 $\pm$ 0.059} & \textbf{0.438} \\
+\midrule
+
+\multirow{2}{*}{\textbf{psychiatry}}
+& DeepSeek R1 8B & 0.420 $\pm$ 0.044 & 0.346 $\pm$ 0.042 & 1.307 \\
+& GPT-4o & \textbf{0.838 $\pm$ 0.037} & \textbf{0.838 $\pm$ 0.037} & \textbf{0.339} \\
+\bottomrule
+\end{tabular}
+\end{table}

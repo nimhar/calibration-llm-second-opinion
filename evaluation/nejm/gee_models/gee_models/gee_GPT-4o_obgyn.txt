@@ -1,0 +1,28 @@
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:          second_agree_prior   No. Observations:                31517
+Model:                                 GEE   No. clusters:                      495
+Method:                        Generalized   Min. cluster size:                  39
+                      Estimating Equations   Max. cluster size:                 102
+Family:                           Binomial   Mean cluster size:                63.7
+Dependence structure:         Independence   Num. iterations:                     2
+Date:                     Fri, 16 May 2025   Scale:                           1.000
+Covariance type:                    robust   Time:                         00:21:19
+===========================================================================================
+                              coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+Intercept                   0.1677      0.174      0.967      0.334      -0.172       0.508
+source[T.Family Doctor]    -0.0120      0.070     -0.170      0.865      -0.150       0.126
+source[T.Internet]          0.0144      0.065      0.221      0.825      -0.113       0.142
+source[T.Na]                0.0188      0.052      0.363      0.716      -0.083       0.120
+source[T.Specialist]       -0.0832      0.071     -1.165      0.244      -0.223       0.057
+gender[T.Male]              0.0718      0.027      2.636      0.008       0.018       0.125
+gender[T.Na]                0.0447      0.034      1.312      0.190      -0.022       0.111
+second_agree_first         -0.5315      0.202     -2.632      0.008      -0.927      -0.136
+prior_correctness           1.6185      0.197      8.232      0.000       1.233       2.004
+age                         0.0009      0.001      1.159      0.246      -0.001       0.002
+experience                 -0.0013      0.001     -1.233      0.218      -0.003       0.001
+==============================================================================
+Skew:                         -0.8842   Kurtosis:                      -0.4868
+Centered skew:                -0.2251   Centered kurtosis:              8.1912
+==============================================================================
