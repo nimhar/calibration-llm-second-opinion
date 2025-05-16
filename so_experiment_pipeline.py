@@ -125,10 +125,10 @@ SOURCES = {
 }
 GENDERS = ["Male", "Female"]
 AGES = {
-    "nejm": [30, 50, 70],
-    "mmlu": [20, 30, 40, 50, 60],
+    "nejm": [30, 40, 50, 60, 70],
+    "mmlu": [30, 40, 50, 60, 70],
 }
-EXPERIENCE = [1, 15, 30]  # only for NEJM
+EXPERIENCE = [5, 10, 15, 20, 25, 30]  # only for NEJM
 
 def build_contexts(ds_key: str) -> List[Dict[str, Any]]:
     from itertools import product
